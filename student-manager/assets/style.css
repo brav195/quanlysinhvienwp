@@ -1,0 +1,169 @@
+/**
+ * Student Manager – Frontend Styles
+ * File: assets/style.css
+ */
+
+/* ============================================================
+   Wrapper & Header
+   ============================================================ */
+.sm-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    max-width: 100%;
+    margin: 24px 0;
+    color: #1d2327;
+}
+
+.sm-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.sm-title {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1d4ed8;
+    border-left: 4px solid #1d4ed8;
+    padding-left: 10px;
+}
+
+.sm-count {
+    font-size: 0.85rem;
+    color: #6b7280;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 3px 12px;
+}
+
+/* ============================================================
+   Table Wrapper (horizontal scroll on mobile)
+   ============================================================ */
+.sm-table-wrap {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .10), 0 4px 16px rgba(0, 0, 0, .06);
+}
+
+/* ============================================================
+   Table
+   ============================================================ */
+.sm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background: #fff;
+}
+
+/* Head */
+.sm-table thead tr {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    color: #fff;
+}
+
+.sm-table thead th {
+    padding: 13px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: none;
+}
+
+/* Body rows */
+.sm-table tbody tr {
+    border-bottom: 1px solid #f3f4f6;
+    transition: background 0.15s ease;
+}
+
+.sm-table tbody tr:hover {
+    background: #eff6ff !important;
+}
+
+.sm-row-odd  { background: #ffffff; }
+.sm-row-even { background: #f9fafb; }
+
+.sm-table tbody td {
+    padding: 11px 16px;
+    vertical-align: middle;
+    color: #374151;
+    border: none;
+}
+
+.sm-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Column widths */
+.sm-col-stt      { width: 60px;  text-align: center; font-weight: 700; color: #6b7280; }
+.sm-col-mssv     { width: 130px; }
+.sm-col-hoten    { min-width: 160px; font-weight: 600; }
+.sm-col-lop      { min-width: 190px; }
+.sm-col-ngaysinh { width: 120px; text-align: center; }
+
+/* ============================================================
+   Badge – Chuyên ngành
+   ============================================================ */
+.sm-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: .03em;
+    white-space: nowrap;
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+/* Màu riêng cho từng chuyên ngành */
+.sm-badge--cntt      { background: #dbeafe; color: #1e40af; }
+.sm-badge--ktpm      { background: #e0e7ff; color: #3730a3; }
+.sm-badge--khmt      { background: #ede9fe; color: #5b21b6; }
+.sm-badge--attt      { background: #fce7f3; color: #9d174d; }
+.sm-badge--kinh_te   { background: #d1fae5; color: #065f46; }
+.sm-badge--qtkd      { background: #dcfce7; color: #166534; }
+.sm-badge--marketing { background: #ffedd5; color: #9a3412; }
+.sm-badge--ke_toan   { background: #fef9c3; color: #854d0e; }
+.sm-badge--luat      { background: #f1f5f9; color: #334155; }
+.sm-badge--ngoai_ngu { background: #fae8ff; color: #6b21a8; }
+
+/* ============================================================
+   Empty / error states
+   ============================================================ */
+.sm-empty {
+    padding: 20px;
+    text-align: center;
+    color: #6b7280;
+    font-style: italic;
+    background: #f9fafb;
+    border: 1px dashed #d1d5db;
+    border-radius: 8px;
+}
+
+.sm-empty-cell {
+    color: #9ca3af;
+}
+
+/* ============================================================
+   Responsive – mobile
+   ============================================================ */
+@media (max-width: 640px) {
+    .sm-title  { font-size: 1.1rem; }
+    .sm-header { flex-direction: column; align-items: flex-start; }
+
+    .sm-table thead th,
+    .sm-table tbody td {
+        padding: 9px 10px;
+        font-size: 0.78rem;
+    }
+
+    .sm-col-stt { width: 40px; }
+}
