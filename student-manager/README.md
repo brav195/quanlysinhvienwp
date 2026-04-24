@@ -112,7 +112,7 @@ Plugin áp dụng đầy đủ các tiêu chuẩn bảo mật WordPress:
 
 
 ### Màn hình Frontend – Shortcode [danh_sach_sinh_vien]
-
+Screenshot%202026-04-24%20152130.png
 ```
 
 > 📷 **Lưu ý:** Thay thế các ảnh ASCII art trên bằng ảnh chụp màn hình thực tế  
